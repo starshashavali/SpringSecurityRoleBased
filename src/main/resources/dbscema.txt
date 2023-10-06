@@ -1,0 +1,19 @@
+ create table car_tbl (car_id integer not null, 
+brand varchar(255),
+ car_name varchar(255),
+ price double precision, primary key (car_id)); 
+
+ 
+create table user_tbl
+ (user_id integer not null, 
+ active_user bit not null, 
+ user_name varchar(255), 
+ user_pwd varchar(255), 
+ user_role varchar(255),
+  primary key (user_id))
+ 
+ insert into user_tbl (active_user, user_name, user_pwd, user_role, user_id) values (?, ?, ?, ?, ?)
+  
+   "userName": "Bramaranbha",
+    "userPwd": "amma123",
+    "userRole": "Admin"
